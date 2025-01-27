@@ -64,7 +64,7 @@ def generate_pdf_report(customer_stats, product_stats, transaction_stats, output
     styles = getSampleStyleSheet()
     story = []
     
-    # Title
+    
     title_style = ParagraphStyle(
         'CustomTitle',
         parent=styles['Heading1'],
@@ -74,14 +74,14 @@ def generate_pdf_report(customer_stats, product_stats, transaction_stats, output
     story.append(Paragraph("E-Commerce Data Analysis Report", title_style))
     story.append(Spacer(1, 20))
     
-    # Customer Analysis
+    
     story.append(Paragraph("Customer Analysis", styles['Heading2']))
     story.append(Paragraph(f"Total Customers: {customer_stats['total_customers']}", styles['Normal']))
     story.append(Paragraph(f"Number of Regions: {customer_stats['regions']}", styles['Normal']))
     story.append(Paragraph(f"Most Popular Region: {customer_stats['top_region']}", styles['Normal']))
     story.append(Spacer(1, 20))
     
-    # Product Analysis
+    
     story.append(Paragraph("Product Analysis", styles['Heading2']))
     story.append(Paragraph(f"Total Products: {product_stats['total_products']}", styles['Normal']))
     story.append(Paragraph(f"Number of Categories: {product_stats['categories']}", styles['Normal']))
@@ -89,7 +89,7 @@ def generate_pdf_report(customer_stats, product_stats, transaction_stats, output
     story.append(Paragraph(f"Price Range: ${product_stats['price_range']:.2f}", styles['Normal']))
     story.append(Spacer(1, 20))
     
-    # Transaction Analysis
+    
     story.append(Paragraph("Transaction Analysis", styles['Heading2']))
     story.append(Paragraph(f"Total Transactions: {transaction_stats['total_transactions']}", styles['Normal']))
     story.append(Paragraph(f"Total Revenue: ${transaction_stats['total_revenue']:,.2f}", styles['Normal']))
