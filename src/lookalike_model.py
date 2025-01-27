@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
+import os
 
 def create_customer_features(transactions_df, products_df):
     customer_metrics = transactions_df.groupby('CustomerID').agg({
@@ -36,21 +37,31 @@ def find_similar_customers(features_df, customer_id, n=3):
             similarities[customer_idx][similar_indices])
 
 def generate_lookalikes(customers_df, products_df, transactions_df):
-    features_df = create_customer_features(transactions_df, products_df)
-    results = []
-    
-    for i in range(1, 21):
-        customer_id = f'C{str(i).zfill(4)}'
-        similar_customers, scores = find_similar_customers(features_df, customer_id)
+    try:
+        output_path = os.environ.get('PROJECT_OUTPUT_PATH', 'outputs')
+        os.makedirs(output_path, exist_ok=True)
         
-        results.append({
-            'customer_id': customer_id,
-            'similar_1': similar_customers[0],
-            'score_1': scores[0],
-            'similar_2': similar_customers[1],
-            'score_2': scores[1],
-            'similar_3': similar_customers[2],
-            'score_3': scores[2]
-        })
-    
-    pd.DataFrame(results).to_csv('../outputs/Akash_Ghosh_Lookalike.csv', index=False)
+        features_df = create_customer_features(transactions_df, products_df)
+        results = []
+        
+        for i in range(1, 21):
+            customer_id = f'C{str(i).zfill(4)}'
+            similar_customers, scores = find_similar_customers(features_df, customer_id)
+            
+            results.append({
+                'customer_id': customer_id,
+                'similar_1': similar_customers[0],
+                'score_1': scores[0],
+                'similar_2': similar_customers[1],
+                'score_2': scores[1],
+                'similar_3': similar_customers[2],
+                'score_3': scores[2]
+            })
+        
+        output_file = os.path.join(output_path, 'Akash_Ghosh_Lookalike.csv')
+        pd.DataFrame(results).to_csv(output_file, index=False)
+        print(f"Lookalike recommendations saved to: {output_file}")
+        
+    except Exception as e:
+        print(f"Error in generating lookalikes: {str(e)}")
+        raise

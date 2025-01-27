@@ -1,11 +1,74 @@
-Total customers: 200
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
 
-Most common region: South America
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20250127234813+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250127234813+05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 526
+>>
+stream
+Gat=h5uWCi&;BTO'moGCNl<7Q!ICfST%($1nK)D%3'\qrBDhKVd+6oZd[">"O@f0#p\#1+"<Z?FUC?'5K\H_=PX2e\arLuN,L"$@f77a^H9R.8iFZ=>but\in/0t])WK]ab:m>:0#LdsjDm/Kl7>k&Uu5Pt$'SVk5@ma06EPB=Xs!Xqn@FA!nbE^V%Ie>%>2.ui/ni];op[S2<G=:5Z,>>+DSU+BND?j=1k\nBW/XJZb:1KI#dH^DX,Lr;F-XG6#e`S!i^DsciDtb)cA+OHd_LcI=/d`/S2%\Ab'^u-V'V82,$iVO1m_>akoSPOTpJbi:7E-c@:q[.%0jMAp6"m<LRWc<RnBGb>pS^fe2Y0TF!feEOKh,08Yj@F_1_!]Xq`2"q3\$A/7]gR&FNIepf7Y:*HC#eMXHKl=NJ.>Ohj/O'T#]6_o=SIH`/h<em+13*_*T2L&+hq<EgpMi$J_7`t_X>fAgW"7Ut>k2jq,,J2g'KM;Ea5]TTfsbR`POkn7o&GN9d+@.4O[5_?9~>endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000073 00000 n 
+0000000114 00000 n 
+0000000221 00000 n 
+0000000333 00000 n 
+0000000526 00000 n 
+0000000594 00000 n 
+0000000877 00000 n 
+0000000936 00000 n 
+trailer
+<<
+/ID 
+[<c236e1f69589e635f76b7b8a00d9bf95><c236e1f69589e635f76b7b8a00d9bf95>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-Average product price: $267.55
-
-Top product category: Books
-
-Total revenue: $689995.56
-
-Average transaction value: $690.00
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+1552
+%%EOF
